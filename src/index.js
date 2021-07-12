@@ -26,7 +26,6 @@ function App() {
 
     let myName = 'Manish'
 
-    // React.createElement('div', null, Reac)
     return (<div>
         <h5 >Manish</h5>
         {/* <Header 
@@ -37,6 +36,7 @@ function App() {
             bootcamp
         > */}
         <CoolThing />
+        {/* Invoking a compoentn and pass a children prop */}
         <Header>
             Hey conchita   
         </Header>
@@ -46,10 +46,12 @@ function App() {
             name={myName}
         />
         <Footer />
+        {/* Invoking component and passing different proprs */}
         <MyMessage msgType={'is-info'} />
         <MyMessage msgType={'is-link'} />
     </div>)
 }
 
 // Done just once in a React app
+// Starts rendering the `<App>` component in our div tag
 ReactDOM.render(<App />, document.querySelector('#root'))
